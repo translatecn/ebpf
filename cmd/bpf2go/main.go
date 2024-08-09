@@ -164,7 +164,7 @@ func newB2G(stdout io.Writer, args []string) (*bpf2go, error) {
 		return nil, errors.New("expected at least two arguments")
 	}
 
-	b2g.identStem = args[0]
+	b2g.identStem = strings.ToTitle(args[0])
 
 	sourceFile, err := filepath.Abs(args[1])
 	if err != nil {

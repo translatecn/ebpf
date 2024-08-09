@@ -50,11 +50,11 @@ func (n templateName) MapSpecs() string {
 }
 
 func (n templateName) Load() string {
-	return n.maybeExport("load" + toUpperFirst(string(n)))
+	return n.maybeExport("Load" + toUpperFirst(string(n)))
 }
 
 func (n templateName) LoadObjects() string {
-	return n.maybeExport("load" + toUpperFirst(string(n)) + "Objects")
+	return n.maybeExport("Load" + toUpperFirst(string(n)) + "Objects")
 }
 
 func (n templateName) Objects() string {
